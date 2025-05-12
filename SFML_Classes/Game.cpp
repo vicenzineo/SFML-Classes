@@ -11,6 +11,13 @@ void Game::initWindow()
 	window->setFramerateLimit(60);
 }
 
+void Game::initTexts()
+{
+	texts = new Texts("dt: 0.000000", "Fonts/arial.ttf");
+	texts->setOrigin(texts->getGlobalBounds().size / 2.0f);
+	texts->setPosition({ width / 2.0f, height / 2.0f });
+}
+
 void Game::pollEvents()
 {
 	while (const std::optional event = window->pollEvent())
@@ -32,6 +39,11 @@ void Game::pollEvents()
 void Game::updating()
 {
 	pollEvents();
+
+	times.getDeltaTime();
+
+	float dt = times.getDeltaTime();
+	texts->streamText("dt: ", dt);
 }
 
 void Game::rendering()
@@ -39,6 +51,7 @@ void Game::rendering()
 	window->clear();
 
 	//Draw here!!!
+	window->draw(*texts);
 
 	window->display();
 }
@@ -46,11 +59,13 @@ void Game::rendering()
 Game::Game()
 {
 	initWindow();
+	initTexts();
 }
 
 Game::~Game()
 {
 	delete window;
+	delete texts;
 }
 
 void Game::running()
