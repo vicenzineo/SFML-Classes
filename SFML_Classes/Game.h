@@ -7,6 +7,7 @@
 #include "Times.h"
 #include "Texts.h"
 #include "Images.h"
+#include "Randomize.h"
 
 class Game
 {
@@ -21,10 +22,12 @@ private:
 	Times times;
 	Texts* texts;
 	Images* images;
+	Randomize *randomize;
 
 	void initWindow();
 	void initTexts();
 	void initImages();
+	void initRandomize();
 
 	void pollEvents();
 

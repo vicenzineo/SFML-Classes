@@ -18,3 +18,8 @@ float Times::getDeltaTime() const
 {
 	return deltaTime;
 }
+
+int Times::getDtEpoch()
+{
+	return std::chrono::steady_clock::now().time_since_epoch().count();
+}

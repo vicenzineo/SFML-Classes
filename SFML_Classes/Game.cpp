@@ -23,6 +23,11 @@ void Game::initImages()
 	images = new Images({ width, height });
 }
 
+void Game::initRandomize()
+{
+	randomize = new Randomize();
+}
+
 void Game::pollEvents()
 {
 	while (const std::optional event = window->pollEvent())
@@ -48,9 +53,13 @@ void Game::updating()
 	times.getDeltaTime();
 
 	float dt = times.getDeltaTime();
-	texts->streamText("dt: ", dt);
 
-	for (unsigned int y = 0; y < height; y++)
+	randomize->randomizeFloat(0.0f, 10.0f);
+	float randVar = randomize->RandomF();
+
+	texts->streamText("Random number: ", randVar);
+
+	/*for (unsigned int y = 0; y < height; y++)
 	{
 		for (unsigned int x = 0; x < width; x++)
 		{
@@ -61,7 +70,7 @@ void Game::updating()
 			images->setPixel({ x, y }, color);
 		}
 	}
-	images->updateTexture();
+	images->updateTexture();*/
 }
 
 void Game::rendering()
@@ -69,8 +78,8 @@ void Game::rendering()
 	window->clear();
 
 	//Draw here!!!
-	//window->draw(*texts);
-	window->draw(images->getSprite());
+	window->draw(*texts);
+	//window->draw(images->getSprite());
 
 	window->display();
 }
@@ -80,6 +89,7 @@ Game::Game()
 	initWindow();
 	initTexts();
 	initImages();
+	initRandomize();
 }
 
 Game::~Game()
@@ -87,6 +97,7 @@ Game::~Game()
 	delete window;
 	delete texts;
 	delete images;
+	delete randomize;
 }
 
 void Game::running()

@@ -9,7 +9,6 @@ private:
 	sf::Clock clock;
 	float deltaTime;
 
-
 public:
 
 	Times();
@@ -17,4 +16,5 @@ public:
 
 	void nextDeltaTime();
 	float getDeltaTime() const;
+	int getDtEpoch();
 };
