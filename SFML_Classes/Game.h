@@ -6,6 +6,7 @@
 
 #include "Times.h"
 #include "Texts.h"
+#include "Images.h"
 
 class Game
 {
@@ -19,9 +20,11 @@ private:
 
 	Times times;
 	Texts* texts;
+	Images* images;
 
 	void initWindow();
 	void initTexts();
+	void initImages();
 
 	void pollEvents();
 

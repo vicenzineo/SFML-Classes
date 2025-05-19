@@ -145,6 +145,7 @@
   <ItemGroup>
     <ClCompile Include="Fonts.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Images.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Texts.cpp" />
     <ClCompile Include="Times.cpp" />
@@ -152,6 +153,7 @@
   <ItemGroup>
     <ClInclude Include="Fonts.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Images.h" />
     <ClInclude Include="Texts.h" />
     <ClInclude Include="Times.h" />
   </ItemGroup>

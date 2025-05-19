@@ -18,6 +18,11 @@ void Game::initTexts()
 	texts->setPosition({ width / 2.0f, height / 2.0f });
 }
 
+void Game::initImages()
+{
+	images = new Images({ width, height });
+}
+
 void Game::pollEvents()
 {
 	while (const std::optional event = window->pollEvent())
@@ -44,6 +49,19 @@ void Game::updating()
 
 	float dt = times.getDeltaTime();
 	texts->streamText("dt: ", dt);
+
+	for (unsigned int y = 0; y < height; y++)
+	{
+		for (unsigned int x = 0; x < width; x++)
+		{
+			std::uint8_t c = (x & y) ^ x;
+			c *= 255;
+			sf::Color color = sf::Color(c, c, c);
+
+			images->setPixel({ x, y }, color);
+		}
+	}
+	images->updateTexture();
 }
 
 void Game::rendering()
@@ -51,7 +69,8 @@ void Game::rendering()
 	window->clear();
 
 	//Draw here!!!
-	window->draw(*texts);
+	//window->draw(*texts);
+	window->draw(images->getSprite());
 
 	window->display();
 }
@@ -60,12 +79,14 @@ Game::Game()
 {
 	initWindow();
 	initTexts();
+	initImages();
 }
 
 Game::~Game()
 {
 	delete window;
 	delete texts;
+	delete images;
 }
 
 void Game::running()
