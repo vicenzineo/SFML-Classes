@@ -28,6 +28,11 @@ void Game::initRandomize()
 	randomize = new Randomize();
 }
 
+void Game::initGOL()
+{
+	gol = new GOL({ width, height });
+}
+
 void Game::pollEvents()
 {
 	while (const std::optional event = window->pollEvent())
@@ -54,10 +59,12 @@ void Game::updating()
 
 	float dt = times.getDeltaTime();
 
-	randomize->randomizeFloat(0.0f, 10.0f);
-	float randVar = randomize->RandomF();
+	gol->update(); 
 
-	texts->streamText("Random number: ", randVar);
+	//randomize->randomizeFloat(0.0f, 10.0f);
+	//float randVar = randomize->RandomF();
+
+	//texts->streamText("Random number: ", randVar);
 
 	/*for (unsigned int y = 0; y < height; y++)
 	{
@@ -78,8 +85,9 @@ void Game::rendering()
 	window->clear();
 
 	//Draw here!!!
-	window->draw(*texts);
+	//window->draw(*texts);
 	//window->draw(images->getSprite());
+	window->draw(gol->getSprite());
 
 	window->display();
 }
@@ -87,17 +95,19 @@ void Game::rendering()
 Game::Game()
 {
 	initWindow();
-	initTexts();
-	initImages();
-	initRandomize();
+	//initTexts();
+	//initImages();
+	//initRandomize();
+	initGOL();
 }
 
 Game::~Game()
 {
 	delete window;
-	delete texts;
-	delete images;
-	delete randomize;
+	//delete texts;
+	//delete images;
+	//delete randomize;
+	delete gol;
 }
 
 void Game::running()

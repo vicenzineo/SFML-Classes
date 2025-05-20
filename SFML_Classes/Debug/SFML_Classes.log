@@ -1,4 +1,14 @@
-﻿  Game.cpp
+﻿  GOL.cpp
+C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\External\include\SFML\System\Exception.hpp(41,47): warning C4275: não dll-interface class 'std::runtime_error' usado como base para dll-interface class 'sf::Exception'
+  (compilando o arquivo fonte 'GOL.cpp')
+      E:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
+      consulte a declaração de 'std::runtime_error'
+      C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\External\include\SFML\System\Exception.hpp(41,23):
+      consulte a declaração de 'sf::Exception'
+  
+C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\SFML_Classes\GOL.cpp(80,19): warning C4018: '>': incompatibilidade de signed/unsigned
+C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\SFML_Classes\GOL.cpp(106,18): warning C4244: 'inicializando': conversão de 'double' para 'unsigned int', possível perda de dados
+  Game.cpp
 C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\External\include\SFML\System\Exception.hpp(41,47): warning C4275: não dll-interface class 'std::runtime_error' usado como base para dll-interface class 'sf::Exception'
   (compilando o arquivo fonte 'Game.cpp')
       E:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
@@ -14,26 +24,5 @@ C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\E
       C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\External\include\SFML\System\Exception.hpp(41,23):
       consulte a declaração de 'sf::Exception'
   
-  Randomize.cpp
-C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\External\include\SFML\System\Exception.hpp(41,47): warning C4275: não dll-interface class 'std::runtime_error' usado como base para dll-interface class 'sf::Exception'
-  (compilando o arquivo fonte 'Randomize.cpp')
-      E:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
-      consulte a declaração de 'std::runtime_error'
-      C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\External\include\SFML\System\Exception.hpp(41,23):
-      consulte a declaração de 'sf::Exception'
-  
-  Times.cpp
-C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\External\include\SFML\System\Exception.hpp(41,47): warning C4275: não dll-interface class 'std::runtime_error' usado como base para dll-interface class 'sf::Exception'
-  (compilando o arquivo fonte 'Times.cpp')
-      E:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
-      consulte a declaração de 'std::runtime_error'
-      C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\External\include\SFML\System\Exception.hpp(41,23):
-      consulte a declaração de 'sf::Exception'
-  
-C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\SFML_Classes\Times.cpp(24,66): warning C4244: 'return': conversão de '_Rep' para 'int', possível perda de dados
-C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\SFML_Classes\Times.cpp(24,66): warning C4244:         with
-C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\SFML_Classes\Times.cpp(24,66): warning C4244:         [
-C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\SFML_Classes\Times.cpp(24,66): warning C4244:             _Rep=__int64
-C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\SFML_Classes\Times.cpp(24,66): warning C4244:         ]
   Gerando Código...
   SFML_Classes.vcxproj -> C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\Debug\SFML_Classes.exe

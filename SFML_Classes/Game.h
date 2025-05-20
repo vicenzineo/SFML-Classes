@@ -8,6 +8,7 @@
 #include "Texts.h"
 #include "Images.h"
 #include "Randomize.h"
+#include "GOL.h"
 
 class Game
 {
@@ -23,11 +24,13 @@ private:
 	Texts* texts;
 	Images* images;
 	Randomize *randomize;
+	GOL* gol;
 
 	void initWindow();
 	void initTexts();
 	void initImages();
 	void initRandomize();
+	void initGOL();
 
 	void pollEvents();
 
