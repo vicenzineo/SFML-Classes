@@ -33,6 +33,13 @@ void Game::initGOL()
 	gol = new GOL({ width, height });
 }
 
+void Game::initSprites()
+{
+	sprites = new Sprites("Sprites/AnimationExample.png", { 32, 32 });
+	sprites->setPosition({ width / 2.0f, height / 2.0f });
+	sprites->setFrameTimer(0.1f);
+}
+
 void Game::pollEvents()
 {
 	while (const std::optional event = window->pollEvent())
@@ -59,7 +66,9 @@ void Game::updating()
 
 	float dt = times.getDeltaTime();
 
-	gol->update(); 
+	//gol->update(); 
+
+	sprites->animate(dt);
 
 	//randomize->randomizeFloat(0.0f, 10.0f);
 	//float randVar = randomize->RandomF();
@@ -87,7 +96,8 @@ void Game::rendering()
 	//Draw here!!!
 	//window->draw(*texts);
 	//window->draw(images->getSprite());
-	window->draw(gol->getSprite());
+	//window->draw(gol->getSprite());
+	window->draw(*sprites);
 
 	window->display();
 }
@@ -98,16 +108,18 @@ Game::Game()
 	//initTexts();
 	//initImages();
 	//initRandomize();
-	initGOL();
+	//initGOL();
+	initSprites();
 }
 
 Game::~Game()
 {
 	delete window;
-	//delete texts;
-	//delete images;
-	//delete randomize;
+	delete texts;
+	delete images;
+	delete randomize;
 	delete gol;
+	delete sprites;
 }
 
 void Game::running()

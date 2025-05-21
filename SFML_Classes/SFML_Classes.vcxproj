@@ -149,7 +149,9 @@
     <ClCompile Include="Images.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Randomize.cpp" />
+    <ClCompile Include="Sprites.cpp" />
     <ClCompile Include="Texts.cpp" />
+    <ClCompile Include="Textures.cpp" />
     <ClCompile Include="Times.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -158,7 +160,9 @@
     <ClInclude Include="GOL.h" />
     <ClInclude Include="Images.h" />
     <ClInclude Include="Randomize.h" />
+    <ClInclude Include="Sprites.h" />
     <ClInclude Include="Texts.h" />
+    <ClInclude Include="Textures.h" />
     <ClInclude Include="Times.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

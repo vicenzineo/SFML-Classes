@@ -9,6 +9,7 @@
 #include "Images.h"
 #include "Randomize.h"
 #include "GOL.h"
+#include "Sprites.h"
 
 class Game
 {
@@ -25,12 +26,14 @@ private:
 	Images* images;
 	Randomize *randomize;
 	GOL* gol;
+	Sprites* sprites;
 
 	void initWindow();
 	void initTexts();
 	void initImages();
 	void initRandomize();
 	void initGOL();
+	void initSprites();
 
 	void pollEvents();
 

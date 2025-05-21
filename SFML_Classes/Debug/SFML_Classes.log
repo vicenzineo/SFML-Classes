@@ -1,14 +1,4 @@
-﻿  GOL.cpp
-C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\External\include\SFML\System\Exception.hpp(41,47): warning C4275: não dll-interface class 'std::runtime_error' usado como base para dll-interface class 'sf::Exception'
-  (compilando o arquivo fonte 'GOL.cpp')
-      E:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
-      consulte a declaração de 'std::runtime_error'
-      C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\External\include\SFML\System\Exception.hpp(41,23):
-      consulte a declaração de 'sf::Exception'
-  
-C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\SFML_Classes\GOL.cpp(80,19): warning C4018: '>': incompatibilidade de signed/unsigned
-C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\SFML_Classes\GOL.cpp(106,18): warning C4244: 'inicializando': conversão de 'double' para 'unsigned int', possível perda de dados
-  Game.cpp
+﻿  Game.cpp
 C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\External\include\SFML\System\Exception.hpp(41,47): warning C4275: não dll-interface class 'std::runtime_error' usado como base para dll-interface class 'sf::Exception'
   (compilando o arquivo fonte 'Game.cpp')
       E:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
@@ -16,13 +6,4 @@ C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\E
       C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\External\include\SFML\System\Exception.hpp(41,23):
       consulte a declaração de 'sf::Exception'
   
-  main.cpp
-C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\External\include\SFML\System\Exception.hpp(41,47): warning C4275: não dll-interface class 'std::runtime_error' usado como base para dll-interface class 'sf::Exception'
-  (compilando o arquivo fonte 'main.cpp')
-      E:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
-      consulte a declaração de 'std::runtime_error'
-      C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\External\include\SFML\System\Exception.hpp(41,23):
-      consulte a declaração de 'sf::Exception'
-  
-  Gerando Código...
   SFML_Classes.vcxproj -> C:\Users\User\OneDrive\Área de Trabalho\SFML-COISAS\source\repos\SFML_Classes\Debug\SFML_Classes.exe
